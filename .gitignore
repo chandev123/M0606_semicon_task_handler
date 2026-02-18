@@ -1,0 +1,20 @@
+# Firebase / Sensitive Keys
+*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ROS 2
+install/
+build/
+log/
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS generated
+.DS_Store
+Thumbs.db

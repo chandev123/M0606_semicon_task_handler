@@ -1,0 +1,62 @@
+position:
+  posj_home: [0.0, 0.0, 90.0, 0.0, 90.0, 0.0]
+
+poses:
+  # Home Poses
+  home_cartesian: [367.22, 3.83, 201.28, 158.41, 179.96, 158.79]
+  home_joint: [0.0, 0.0, 90.0, 0.0, 90.0, 0.0]
+
+  # Global Waypoints
+  transition_waypoint: [26.01, 17.70, 87.27, 0.13, 75.06, 26.03]
+  
+  # Insertion Target (Start Point)
+  insert_a_target: [315.058, -241.698, 128.128, 146.081, -179.672, 146.604]
+  
+  #DROP_ZONE_JOINT
+  drop_zone_joint: [0.76, 23.22, 62.41, 0.40, 94.33, 0.79]
+  
+  # Shelf 1 Sequence (Pick)
+  shelf_1:
+    approach_x_offset: 105.0
+    retract_x_offset: -80.0
+    wait_stabilize_sec: 0.5
+    joint_poses:
+      - [30.62, 18.12, 122.74, -146.41, 57.81, 161.67]
+      - [40.95, 24.14, 113.02, -133.93, 59.29, 152.80]
+      - [49.59, 30.45, 102.15, -123.56, 61.19, 144.29]
+
+  # Shelf 2 Sequence (Place/Pick)
+  shelf_2:
+    joint_poses:
+      # 오른족
+      - [-31.99, 10.24, 93.31, 0.34, 76.54, -32.21]
+      # 왼쪽
+      - [-25.48, 25.28, 71.87, 0.42, 83.16, -25.61]
+      # 가운데
+      - [-28.48, 17.78, 82.82, 0.41, 79.67, -28.69]
+
+  # Shelf 3 / Tilt Params
+  shelf_3_tilt:
+    angle_deg: 20.0
+    direction_sign: -1.0
+    wait_inspection_sec: 2.0
+
+insertion:
+  # Constants for execute_insertion_at
+  fz_contact: 12.0
+  slide_dist: 60.0
+  slide_step: 5.0
+  fz_delta_th: 8.0
+  ty_delta_th: 0.2
+  tilt_angle: 10.0
+  pivot_len: 5.0
+  x_slide: 6.1
+  
+  # Stiffness and Force Settings
+  stiffness: [1000, 1000, 300, 100, 100, 100]
+  force_des_contact: [0, 0, -20, 0, 0, 0]
+  force_des_slide: [0, 0, -10, 0, 0, 0]
+  force_des_final: [0, 0, -15, 0, 0, 0]
+
+
+
