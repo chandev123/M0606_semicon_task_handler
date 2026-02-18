@@ -20,7 +20,7 @@
 ![Flowchart](docs/images/flowchart.png)
 ![Workspace](docs/images/workspace.jpeg)
 
-[🎥 1 Min Demo Video](docs/images/1min_demo_video.mp4)
+[🎥 1 Min Demo Video (Click to Watch Website)](https://chandev123.github.io/M0606_semicon_task_handler/)
 
 * **Repository Structure**
 

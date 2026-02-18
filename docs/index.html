@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M0609 Semicon Task Handler Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>M0609 Semicon Task Handler</h1>
+        <p>
+            반도체 Task Handler 로봇 자동화 공정 (ROS2 기반 제어 및 통합 모니터링 시스템)<br>
+            6축 매니퓰레이터(M0609)를 활용한 이송 및 정밀 삽입(Peg-in-hole) 자동화 데모 영상입니다.
+        </p>
+        
+        <video controls poster="images/workspace.jpeg">
+            <source src="images/1min_demo_video.mp4" type="video/mp4">
+            브라우저가 비디오 태그를 지원하지 않습니다.
+        </video>
+
+        <div>
+            <a href="https://github.com/chandev123/M0606_semicon_task_handler" class="btn">GitHub 리포지토리 방문하기</a>
+        </div>
+    </div>
+    <footer>
+        &copy; 2026 M0609 Semicon Task Handler Project
+    </footer>
+</body>
+</html>
