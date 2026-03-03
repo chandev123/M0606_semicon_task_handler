@@ -12,15 +12,15 @@
 * **실시간 하드웨어 병렬 모니터링:** 메인 제어 루프와 완전히 분리된 독립 노드(`hw_node`)를 통해 관절 상태 및 에러를 실시간 모니터링.
 * **웹 기반 통합 대시보드 연동:** 사용자가 원격으로 공정을 제어하고 로봇의 상태를 시각적으로 확인할 수 있는 웹 UI 구축.
 
+[🎥 1 Min Demo Video (Click to Watch Website)](https://chandev123.github.io/M0609_semicon_task_handler/)
+
 ---
 
 ## 🏗️ 2. 시스템 설계 및 플로우차트 (System Architecture)
 ![System Architecture](docs/images/system_architecture.png)
-![Node Architecture](docs/images/node_architecture.png)
 ![Flowchart](docs/images/flowchart.png)
 ![Workspace](docs/images/workspace.jpeg)
-
-[🎥 1 Min Demo Video (Click to Watch Website)](https://chandev123.github.io/M0609_semicon_task_handler/)
+![Node Architecture](docs/images/node_architecture.png)
 
 * **Repository Structure**
 
@@ -50,14 +50,6 @@ m0609_semicon_task_handler/
 ├── package.xml
 └── README.md
 ```
-
----
-
-### 통신 아키텍처 흐름 (Data Flow)
-1. **Frontend (Web UI):** 사용자가 대시보드에서 제어 명령(Start/Stop) 하달.
-2. **ROS2 Core (`task_node`):** UI의 명령을 Subscribe하여 145개의 모션 시퀀스 생성 및 DSR API로 퍼블리시.
-3. **Hardware (M0609):** 컨트롤러가 명령을 수신하여 물리적 모션 수행 후, 관절 상태 피드백 반환.
-4. **ROS2 Monitor (`hw_node`):** 하드웨어 피드백을 수집하여 터미널 출력
 
 ---
 
@@ -99,4 +91,3 @@ ros2 run m0609_semicon_task_handler ui_node
 cd frontend/
 # index.html 파일을 브라우저에서 실행 (Drag & Drop or Double Click)
 ```
-
